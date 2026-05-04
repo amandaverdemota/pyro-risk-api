@@ -16,7 +16,9 @@ class Settings(BaseSettings):
 
     cameras_refresh_cron_hour: int = 2
     cameras_refresh_cron_minute: int = 0
-    cameras_refresh_timezone: str = "Europe/Paris"
+    cameras_refresh_timezone: str = "UTC"
+
+    database_url: str = "sqlite:///./data/pyro_risk.db"
 
 
 settings = Settings()

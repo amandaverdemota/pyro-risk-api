@@ -6,11 +6,14 @@ import requests
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 from fastapi import FastAPI
+from sqlalchemy.dialects.sqlite import insert as sqlite_insert
 
-from pyro_risk_api.api import cameras, health
+from pyro_risk_api.api import cameras, health, scores
 from pyro_risk_api.core.config import settings
+from pyro_risk_api.core.db import SessionLocal, init_db
 from pyro_risk_api.core.fwi import fwi_class, query_fwi
 from pyro_risk_api.core.pyro_client import build_client
+from pyro_risk_api.models.fwi_score import FWIScore
 
 logger = logging.getLogger(__name__)
 
@@ -36,19 +39,48 @@ def _enrich_with_fwi(cameras_raw: list[dict]) -> list[dict]:
     return enriched
 
 
+def _persist_scores(enriched: list[dict]) -> None:
+    if not enriched:
+        return
+    now = datetime.now(timezone.utc)
+    today = now.date()
+    payload = [
+        {
+            "camera_id": cam["id"],
+            "date": today,
+            "fwi": cam["fwi"],
+            "fwi_class": cam["fwi_class"],
+            "fetched_at": now,
+        }
+        for cam in enriched
+    ]
+    with SessionLocal() as session:
+        stmt = sqlite_insert(FWIScore).values(payload)
+        stmt = stmt.on_conflict_do_update(
+            index_elements=["camera_id", "date"],
+            set_={"fwi": stmt.excluded.fwi, "fwi_class": stmt.excluded.fwi_class, "fetched_at": stmt.excluded.fetched_at},
+        )
+        session.execute(stmt)
+        session.commit()
+    logger.info("persisted %d FWI scores for %s", len(payload), today.isoformat())
+
+
 def refresh_cameras(app: FastAPI) -> None:
     try:
         client = build_client()
         raw = client.fetch_cameras().json()
         logger.info("fetched %d cameras from %s", len(raw), settings.pyro_api_host)
-        app.state.cameras = _enrich_with_fwi(raw)
-        logger.info("FWI computed for %d cameras", len(app.state.cameras))
+        enriched = _enrich_with_fwi(raw)
+        app.state.cameras = enriched
+        logger.info("FWI computed for %d cameras", len(enriched))
+        _persist_scores(enriched)
     except Exception:
         logger.exception("failed to refresh cameras")
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    init_db()
     app.state.cameras = None
 
     scheduler = AsyncIOScheduler(timezone=settings.cameras_refresh_timezone)
@@ -82,3 +114,4 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title=settings.app_name, version=settings.version, lifespan=lifespan)
 app.include_router(health.router)
 app.include_router(cameras.router)
+app.include_router(scores.router)

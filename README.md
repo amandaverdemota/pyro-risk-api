@@ -3,18 +3,20 @@
 FastAPI service that exposes Pyronear cameras enriched with a daily fire-risk
 score. Cameras are pulled from the upstream
 [pyronear/pyro-api](https://github.com/pyronear/pyro-api) on startup and
-refreshed every night at 02:00 Europe/Paris. For each camera, the current-day
+refreshed every night at 02:00 UTC (configurable). All timestamps emitted by
+the API are UTC. For each camera, the current-day
 [FWI (Fire Weather Index)](https://effis.jrc.ec.europa.eu/about-effis/technical-background/fire-danger-forecast)
 is sampled from the Copernicus EFFIS WMS layer (`mf010.fwi`, Météo-France 10 km).
 
 ## Endpoints
 
-| Method | Path                  | Auth   | Description                              |
-|--------|-----------------------|--------|------------------------------------------|
-| GET    | `/health`             | none   | Liveness probe                           |
-| GET    | `/cameras`            | basic  | List all cameras with current FWI        |
-| GET    | `/cameras/{id}`       | basic  | Single camera by id                      |
-| GET    | `/docs`               | none   | OpenAPI / Swagger UI                     |
+| Method | Path                                | Auth   | Description                                          |
+|--------|-------------------------------------|--------|------------------------------------------------------|
+| GET    | `/health`                           | none   | Liveness probe                                       |
+| GET    | `/cameras`                          | basic  | List all cameras with current FWI                    |
+| GET    | `/cameras/{id}`                     | basic  | Single camera by id                                  |
+| GET    | `/scores?start=…&end=…&camera_id=…` | basic  | Persisted scores; date range and camera filter (`end` defaults to today, `camera_id` optional) |
+| GET    | `/docs`                             | none   | OpenAPI / Swagger UI                                 |
 
 Each camera payload:
 
@@ -46,9 +48,10 @@ not committed). See `.env.example`:
 | `PYRO_API_HOST`                | Upstream pyro-api host                        | `https://alertapi.pyronear.org/`     |
 | `PYRO_API_USERNAME`            | Upstream pyro-api username                    | _required_                           |
 | `PYRO_API_PASSWORD`            | Upstream pyro-api password                    | _required_                           |
-| `CAMERAS_REFRESH_CRON_HOUR`    | Daily refresh hour                            | `2`                                  |
+| `CAMERAS_REFRESH_CRON_HOUR`    | Daily refresh hour (UTC by default)           | `2`                                  |
 | `CAMERAS_REFRESH_CRON_MINUTE`  | Daily refresh minute                          | `0`                                  |
-| `CAMERAS_REFRESH_TIMEZONE`     | IANA timezone for the schedule                | `Europe/Paris`                       |
+| `CAMERAS_REFRESH_TIMEZONE`     | IANA timezone for the schedule                | `UTC`                                |
+| `DATABASE_URL`                 | SQLAlchemy URL for score persistence          | `sqlite:///./data/pyro_risk.db`      |
 
 The `/cameras` endpoints are protected with HTTP Basic auth; `/health` is left
 public so container orchestrators can probe it.
@@ -109,12 +112,16 @@ pyro_risk_api/
 ├── main.py              # FastAPI app, lifespan, APScheduler job
 ├── api/
 │   ├── health.py        # GET /health
-│   └── cameras.py       # GET /cameras, GET /cameras/{id} (auth-protected)
-└── core/
-    ├── config.py        # pydantic-settings, .env loader
-    ├── auth.py          # Basic-auth dependency
-    ├── pyro_client.py   # Upstream pyro-api login + client factory
-    └── fwi.py           # EFFIS WMS sampling, FWI class buckets
+│   ├── cameras.py       # GET /cameras, GET /cameras/{id} (auth-protected)
+│   └── scores.py        # GET /scores (range + optional camera filter)
+├── core/
+│   ├── config.py        # pydantic-settings, .env loader
+│   ├── auth.py          # Basic-auth dependency
+│   ├── db.py            # SQLAlchemy engine + session factory
+│   ├── pyro_client.py   # Upstream pyro-api login + client factory
+│   └── fwi.py           # EFFIS WMS sampling, FWI class buckets
+└── models/
+    └── fwi_score.py     # FWIScore table (camera_id, date, fwi, fwi_class)
 ```
 
 ## How the refresh works
@@ -127,5 +134,8 @@ pyro_risk_api/
      in `app.state.cameras`.
 2. An `AsyncIOScheduler` (APScheduler) re-runs the same function every day at
    the configured hour/minute in the configured timezone.
-3. The HTTP routes are pure reads from `app.state.cameras` — no upstream calls
-   on the request path.
+3. Each refresh upserts one `(camera_id, date)` row per camera into the
+   `fwi_score` table — historical scores accumulate over time.
+4. The HTTP routes are pure reads from `app.state.cameras` (current snapshot)
+   or the database (historical scores) — no upstream calls on the request
+   path.

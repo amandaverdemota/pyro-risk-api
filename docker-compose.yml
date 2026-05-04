@@ -28,6 +28,8 @@ services:
     env_file: .env
     expose:
       - "8000"
+    volumes:
+      - api-data:/app/data
     labels:
       - traefik.enable=true
       - traefik.http.routers.riskapi.rule=Host(`${API_DOMAIN}`)
@@ -38,3 +40,4 @@ services:
 
 volumes:
   traefik-letsencrypt:
+  api-data:

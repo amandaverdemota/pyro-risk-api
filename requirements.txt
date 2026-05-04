@@ -1,6 +1,7 @@
 fastapi
 uvicorn[standard]
 pydantic-settings
+sqlalchemy
 apscheduler
 pyroclient @ git+https://github.com/pyronear/pyro-api.git@main#subdirectory=client
 numpy
