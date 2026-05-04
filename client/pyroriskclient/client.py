@@ -54,3 +54,17 @@ class Client:
         if camera_id is not None:
             params["camera_id"] = camera_id
         return self._get(f"scores/{day}", params=params or None)
+
+    def recompute_scores(self, start: date | str, end: date | str) -> dict:
+        """Schedule a recompute over a date range for every loaded camera.
+
+        Returns immediately (HTTP 202); the work runs in the server scheduler.
+        """
+        resp = requests.post(
+            urljoin(self.host, "scores/recompute"),
+            params={"start": str(start), "end": str(end)},
+            auth=self.auth,
+            timeout=self.timeout,
+        )
+        resp.raise_for_status()
+        return resp.json()

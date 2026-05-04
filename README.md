@@ -16,6 +16,7 @@ is sampled from the Copernicus EFFIS WMS layer (`mf010.fwi`, Météo-France 10 k
 | GET    | `/cameras`                          | basic  | List all cameras with current FWI                    |
 | GET    | `/cameras/{id}`                     | basic  | Single camera by id                                  |
 | GET    | `/scores/{date}?camera_id=…`        | basic  | Persisted scores for a single day; `camera_id` filter is optional |
+| POST   | `/scores/recompute?start=…&end=…`   | basic  | Schedule a recompute of FWI for every loaded camera over `[start, end]` (returns 202; runs in background) |
 | GET    | `/docs`                             | none   | OpenAPI / Swagger UI                                 |
 
 Each camera payload:

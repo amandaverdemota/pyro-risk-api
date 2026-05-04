@@ -1,6 +1,6 @@
 import logging
 from contextlib import asynccontextmanager
-from datetime import datetime, timezone
+from datetime import date as date_, datetime, timedelta, timezone
 
 import requests
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -38,6 +38,19 @@ def _enrich_with_fwi(cameras_raw: list[dict], now: datetime) -> list[dict]:
     return enriched
 
 
+def _upsert_scores(payload: list[dict]) -> None:
+    if not payload:
+        return
+    with SessionLocal() as session:
+        stmt = sqlite_insert(FWIScore).values(payload)
+        stmt = stmt.on_conflict_do_update(
+            index_elements=["camera_id", "date"],
+            set_={"fwi": stmt.excluded.fwi, "fwi_class": stmt.excluded.fwi_class, "fetched_at": stmt.excluded.fetched_at},
+        )
+        session.execute(stmt)
+        session.commit()
+
+
 def _persist_scores(enriched: list[dict], now: datetime) -> None:
     if not enriched:
         return
@@ -52,15 +65,42 @@ def _persist_scores(enriched: list[dict], now: datetime) -> None:
         }
         for cam in enriched
     ]
-    with SessionLocal() as session:
-        stmt = sqlite_insert(FWIScore).values(payload)
-        stmt = stmt.on_conflict_do_update(
-            index_elements=["camera_id", "date"],
-            set_={"fwi": stmt.excluded.fwi, "fwi_class": stmt.excluded.fwi_class, "fetched_at": stmt.excluded.fetched_at},
-        )
-        session.execute(stmt)
-        session.commit()
+    _upsert_scores(payload)
     logger.info("persisted %d FWI scores for %s", len(payload), today.isoformat())
+
+
+def recompute_range(app: FastAPI, start: date_, end: date_) -> None:
+    cams = app.state.cameras
+    if not cams:
+        logger.warning("recompute aborted: cameras not loaded")
+        return
+
+    total = 0
+    day = start
+    while day <= end:
+        now = datetime.now(timezone.utc)
+        payload: list[dict] = []
+        for cam in cams:
+            try:
+                value = query_fwi(cam["lat"], cam["lon"], day)
+                fwi = round(value, 3) if value is not None else None
+                cls = fwi_class(value) if value is not None else None
+            except (requests.RequestException, RuntimeError) as exc:
+                logger.warning("FWI query failed cam=%s day=%s: %s", cam["id"], day, exc)
+                fwi = None
+                cls = None
+            payload.append({
+                "camera_id": cam["id"],
+                "date": day,
+                "fwi": fwi,
+                "fwi_class": cls,
+                "fetched_at": now,
+            })
+        _upsert_scores(payload)
+        logger.info("recomputed %d scores for %s", len(payload), day.isoformat())
+        total += len(payload)
+        day += timedelta(days=1)
+    logger.info("recompute done: %d scores from %s to %s", total, start, end)
 
 
 def refresh_cameras(app: FastAPI) -> None:

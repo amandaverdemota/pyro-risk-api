@@ -1,6 +1,6 @@
 from datetime import date as date_, datetime, timezone
 
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
 from pydantic import BaseModel
 from sqlalchemy import select
 from sqlalchemy.orm import Session
@@ -26,6 +26,44 @@ def get_session():
         yield session
     finally:
         session.close()
+
+
+class RecomputeAck(BaseModel):
+    status: str
+    start: date_
+    end: date_
+    cameras: int
+    days: int
+
+
+@router.post("/scores/recompute", response_model=RecomputeAck, status_code=status.HTTP_202_ACCEPTED)
+def recompute_scores(
+    request: Request,
+    start: date_ = Query(..., description="Inclusive start date (UTC)"),
+    end: date_ = Query(..., description="Inclusive end date (UTC)"),
+) -> RecomputeAck:
+    if end < start:
+        raise HTTPException(status_code=400, detail="end is before start")
+    cams = request.app.state.cameras
+    if not cams:
+        raise HTTPException(status_code=503, detail="cameras not loaded yet")
+
+    from pyro_risk_api.main import recompute_range  # avoid circular import at module load
+
+    scheduler = request.app.state.scheduler
+    scheduler.add_job(
+        recompute_range,
+        args=[request.app, start, end],
+        id=f"recompute-{start}-{end}",
+        replace_existing=True,
+    )
+    return RecomputeAck(
+        status="scheduled",
+        start=start,
+        end=end,
+        cameras=len(cams),
+        days=(end - start).days + 1,
+    )
 
 
 @router.get("/scores/{day}", response_model=list[Score])
