@@ -50,9 +50,9 @@ def refresh_cameras(app: FastAPI) -> None:
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     app.state.cameras = None
-    refresh_cameras(app)
 
     scheduler = AsyncIOScheduler(timezone=settings.cameras_refresh_timezone)
+    scheduler.add_job(refresh_cameras, args=[app], id="initial_refresh")
     scheduler.add_job(
         refresh_cameras,
         CronTrigger(
