@@ -67,4 +67,11 @@ def query_fwi(lat: float, lon: float, target_date: date, layer: str = LAYER) -> 
 
     if value < 0 or value > 200:
         return None
+    # Disambiguate real zero from out-of-coverage. EFFIS renders nodata as
+    # 0, so outside the Météo-France model domain the whole bbox is exactly
+    # 0. Inside the domain, even a region with FWI ≈ 0 has tiny non-zero
+    # neighbors from the model grid. If the entire window is strictly 0,
+    # treat the sample as nodata.
+    if value == 0 and float(arr.max()) == 0:
+        return None
     return value
