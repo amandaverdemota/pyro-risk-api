@@ -16,6 +16,7 @@ is sampled from the Copernicus EFFIS WMS layer (`mf010.fwi`, Météo-France 10 k
 | GET    | `/cameras?organization_id=…`        | basic  | List cameras with current FWI; `organization_id` filter is optional |
 | GET    | `/cameras/{id}`                     | basic  | Single camera by id                                  |
 | GET    | `/scores/{date}?camera_id=…&organization_id=…` | basic | Persisted scores for a single day; both filters optional. Cameras missing for `date` are computed and persisted on the fly before the response is returned |
+| GET    | `/risk?lat=…&lon=…&date=…`         | basic  | One-shot FWI lookup for an arbitrary point (no persistence); `date` defaults to today UTC |
 | POST   | `/scores/recompute?start=…&end=…&organization_id=…` | basic | Schedule a recompute over `[start, end]`; restrict to one org if given. Returns 202; runs in background |
 | GET    | `/docs`                             | none   | OpenAPI / Swagger UI                                 |
 
@@ -133,7 +134,8 @@ pyro_risk_api/
 ├── api/
 │   ├── health.py        # GET /health
 │   ├── cameras.py       # GET /cameras, GET /cameras/{id} (auth-protected)
-│   └── scores.py        # GET /scores/{date} (single day, optional camera filter)
+│   ├── scores.py        # GET /scores/{date} (single day, optional camera filter)
+│   └── risk.py          # GET /risk (stateless lat/lon + date lookup)
 ├── core/
 │   ├── config.py        # pydantic-settings, .env loader
 │   ├── auth.py          # Basic-auth dependency

@@ -62,6 +62,22 @@ class Client:
             params["organization_id"] = organization_id
         return self._get(f"scores/{day}", params=params or None)
 
+    def compute_risk(
+        self,
+        lat: float,
+        lon: float,
+        day: date | str | None = None,
+    ) -> dict:
+        """Compute the FWI risk for an arbitrary (lat, lon).
+
+        Stateless — nothing is persisted. ``day`` defaults to today (UTC)
+        server-side.
+        """
+        params: dict[str, Any] = {"lat": lat, "lon": lon}
+        if day is not None:
+            params["date"] = str(day)
+        return self._get("risk", params=params)
+
     def recompute_scores(
         self,
         start: date | str,

@@ -8,7 +8,7 @@ from apscheduler.triggers.cron import CronTrigger
 from fastapi import FastAPI
 from sqlalchemy.dialects.sqlite import insert as sqlite_insert
 
-from pyro_risk_api.api import cameras, health, scores
+from pyro_risk_api.api import cameras, health, risk, scores
 from pyro_risk_api.core.config import settings
 from pyro_risk_api.core.db import SessionLocal, init_db
 from pyro_risk_api.core.fwi import fwi_class, query_fwi
@@ -193,3 +193,4 @@ app = FastAPI(title=settings.app_name, version=settings.version, lifespan=lifesp
 app.include_router(health.router)
 app.include_router(cameras.router)
 app.include_router(scores.router)
+app.include_router(risk.router)
