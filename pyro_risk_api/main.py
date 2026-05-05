@@ -20,19 +20,44 @@ logger = logging.getLogger(__name__)
 CAMERA_FIELDS = ("id", "name", "organization_id", "lat", "lon")
 
 
+def _compute_fwi_for_cams(cams: list[dict], day: date_) -> dict[int, tuple[float | None, str | None]]:
+    """Return ``{camera_id: (fwi, fwi_class)}`` for every camera in ``cams``.
+
+    Each unique ``(lat, lon)`` is queried at most once: cameras sharing a
+    location reuse the cached value. ``None`` covers both transport errors
+    and EFFIS nodata.
+    """
+    cache: dict[tuple[float, float], float | None] = {}
+    out: dict[int, tuple[float | None, str | None]] = {}
+    for cam in cams:
+        key = (cam["lat"], cam["lon"])
+        if key not in cache:
+            try:
+                cache[key] = query_fwi(cam["lat"], cam["lon"], day)
+            except (requests.RequestException, RuntimeError) as exc:
+                logger.warning(
+                    "FWI query failed lat=%s lon=%s day=%s: %s", key[0], key[1], day, exc
+                )
+                cache[key] = None
+        value = cache[key]
+        out[cam["id"]] = (
+            (round(value, 3), fwi_class(value)) if value is not None else (None, None)
+        )
+    if cams:
+        logger.info(
+            "FWI day=%s: %d cameras → %d unique locations queried",
+            day, len(cams), len(cache),
+        )
+    return out
+
+
 def _enrich_with_fwi(cameras_raw: list[dict], now: datetime) -> list[dict]:
     today = now.date()
+    fwi_by_id = _compute_fwi_for_cams(cameras_raw, today)
     enriched: list[dict] = []
     for cam in cameras_raw:
         row = {k: cam.get(k) for k in CAMERA_FIELDS}
-        try:
-            value = query_fwi(cam["lat"], cam["lon"], today)
-            row["fwi"] = round(value, 3) if value is not None else None
-            row["fwi_class"] = fwi_class(value) if value is not None else None
-        except (requests.RequestException, RuntimeError) as exc:
-            logger.warning("FWI query failed for camera %s: %s", cam.get("id"), exc)
-            row["fwi"] = None
-            row["fwi_class"] = None
+        row["fwi"], row["fwi_class"] = fwi_by_id[cam["id"]]
         row["last_refresh_at"] = now.isoformat(timespec="seconds")
         enriched.append(row)
     return enriched
@@ -73,26 +98,24 @@ def compute_and_persist_day(cams: list[dict], day: date_) -> int:
     """Compute FWI for ``cams`` on ``day`` and upsert successful samples.
 
     Failed lookups (transport error, EFFIS error, or nodata) are skipped so
-    they don't overwrite previously persisted values. Returns the number of
-    rows written.
+    they don't overwrite previously persisted values. Cameras sharing the
+    same ``(lat, lon)`` reuse one EFFIS query. Returns the number of rows
+    written.
     """
     if not cams:
         return 0
     now = datetime.now(timezone.utc)
+    fwi_by_id = _compute_fwi_for_cams(cams, day)
     payload: list[dict] = []
     for cam in cams:
-        try:
-            value = query_fwi(cam["lat"], cam["lon"], day)
-        except (requests.RequestException, RuntimeError) as exc:
-            logger.warning("FWI query failed cam=%s day=%s: %s", cam["id"], day, exc)
-            continue
-        if value is None:
+        fwi, cls = fwi_by_id[cam["id"]]
+        if fwi is None:
             continue
         payload.append({
             "camera_id": cam["id"],
             "date": day,
-            "fwi": round(value, 3),
-            "fwi_class": fwi_class(value),
+            "fwi": fwi,
+            "fwi_class": cls,
             "fetched_at": now,
         })
     _upsert_scores(payload)
