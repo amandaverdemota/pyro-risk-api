@@ -45,8 +45,8 @@ not committed). See `.env.example`:
 
 | Variable                       | Description                                   | Default                              |
 |--------------------------------|-----------------------------------------------|--------------------------------------|
-| `API_USERNAME`                 | Basic-auth user for protected routes          | _required_                           |
-| `API_PASSWORD`                 | Basic-auth password for protected routes      | _required_                           |
+| `API_USERNAME`                 | Basic-auth user for protected routes          | _empty (protected routes return 503)_  |
+| `API_PASSWORD`                 | Basic-auth password for protected routes      | _empty (protected routes return 503)_  |
 | `PYRO_API_HOST`                | Upstream pyro-api host                        | `https://alertapi.pyronear.org/`     |
 | `PYRO_API_USERNAME`            | Upstream pyro-api username                    | _required unless `CAMERAS_FILE` set_ |
 | `PYRO_API_PASSWORD`            | Upstream pyro-api password                    | _required unless `CAMERAS_FILE` set_ |
