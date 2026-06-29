@@ -61,13 +61,18 @@ public so container orchestrators can probe it.
 
 ## Run locally
 
+Uses [uv](https://docs.astral.sh/uv/). Install it if needed:
+
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+```bash
+uv venv
+uv pip install -r requirements.txt
 
 cp .env.example .env  # runs creds-free by default (bundled sample cameras)
-uvicorn pyro_risk_api.main:app --reload
+uv run uvicorn pyro_risk_api.main:app --reload
 ```
 
 Then:
@@ -114,7 +119,7 @@ A tiny client lives at [`client/`](./client) and is published as
 `pyroriskclient`. Install with:
 
 ```bash
-pip install "git+https://github.com/MateoLostanlen/pyro-risk-api.git#subdirectory=client"
+uv pip install "git+https://github.com/MateoLostanlen/pyro-risk-api.git#subdirectory=client"
 ```
 
 ```python
