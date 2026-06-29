@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -13,6 +15,11 @@ class Settings(BaseSettings):
     pyro_api_host: str = "https://alertapi.pyronear.org/"
     pyro_api_username: str = ""
     pyro_api_password: str = ""
+
+    # When set, cameras are loaded from this JSON file instead of the live
+    # API, so the app can run without credentials. The file must contain a
+    # JSON list of camera objects (same shape as the main API response).
+    cameras_file: Path | None = None
 
     cameras_refresh_cron_hour: int = 2
     cameras_refresh_cron_minute: int = 0

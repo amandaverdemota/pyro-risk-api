@@ -27,6 +27,7 @@ COPY --from=builder /opt/venv /opt/venv
 
 WORKDIR /app
 COPY pyro_risk_api ./pyro_risk_api
+COPY sample_cameras.json ./sample_cameras.json
 RUN mkdir -p /app/data && chown -R app:app /app
 
 USER app
