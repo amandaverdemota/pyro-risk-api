@@ -1,0 +1,3650 @@
+[
+  {
+    "id": 1,
+    "name": "camera-001",
+    "organization_id": 2,
+    "lat": 48.8487,
+    "lon": 3.0244,
+    "elevation": 326,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 36,
+        "camera_id": 1,
+        "azimuth": 315,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 67,
+        "camera_id": 1,
+        "azimuth": 342,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 76,
+        "camera_id": 1,
+        "azimuth": 220,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 112,
+        "camera_id": 1,
+        "azimuth": 270,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 118,
+        "camera_id": 1,
+        "azimuth": 180,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 119,
+        "camera_id": 1,
+        "azimuth": 45,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 135,
+        "camera_id": 1,
+        "azimuth": 135,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 148,
+        "camera_id": 1,
+        "azimuth": 345,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 169,
+        "camera_id": 1,
+        "azimuth": 225,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 8,
+        "camera_id": 1,
+        "azimuth": 150,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 14,
+        "camera_id": 1,
+        "azimuth": 100,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 24,
+        "camera_id": 1,
+        "azimuth": 17,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 26,
+        "camera_id": 1,
+        "azimuth": 90,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 226,
+        "camera_id": 1,
+        "azimuth": 50,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 248,
+        "camera_id": 1,
+        "azimuth": 83,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 252,
+        "camera_id": 1,
+        "azimuth": 1,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 276,
+        "camera_id": 1,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 301,
+        "camera_id": 1,
+        "azimuth": 66,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "camera-002",
+    "organization_id": 2,
+    "lat": 48.5399,
+    "lon": 2.2086,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 64,
+        "camera_id": 2,
+        "azimuth": 315,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 84,
+        "camera_id": 2,
+        "azimuth": 85,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 92,
+        "camera_id": 2,
+        "azimuth": 350,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 109,
+        "camera_id": 2,
+        "azimuth": 246,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 180,
+        "camera_id": 2,
+        "azimuth": 17,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 21,
+        "camera_id": 2,
+        "azimuth": 30,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 34,
+        "camera_id": 2,
+        "azimuth": 294,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 50,
+        "camera_id": 2,
+        "azimuth": 78,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 270,
+        "camera_id": 2,
+        "azimuth": 83,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 280,
+        "camera_id": 2,
+        "azimuth": 250,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 283,
+        "camera_id": 2,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 295,
+        "camera_id": 2,
+        "azimuth": 200,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 331,
+        "camera_id": 2,
+        "azimuth": 300,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 63,
+        "camera_id": 2,
+        "azimuth": 1,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "camera-003",
+    "organization_id": 2,
+    "lat": 48.6695,
+    "lon": 2.9506,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 95,
+        "camera_id": 3,
+        "azimuth": 90,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 144,
+        "camera_id": 3,
+        "azimuth": 1,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 161,
+        "camera_id": 3,
+        "azimuth": 270,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 188,
+        "camera_id": 3,
+        "azimuth": 318,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 285,
+        "camera_id": 3,
+        "azimuth": 315,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 314,
+        "camera_id": 3,
+        "azimuth": 180,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "camera-004",
+    "organization_id": 2,
+    "lat": 44.5062,
+    "lon": 4.2711,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 174,
+        "camera_id": 4,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "camera-006",
+    "organization_id": 1,
+    "lat": 44.5062,
+    "lon": 4.2711,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 66,
+        "camera_id": 6,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 356,
+        "camera_id": 6,
+        "azimuth": 359,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "camera-007",
+    "organization_id": 3,
+    "lat": 44.5062,
+    "lon": 4.2711,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 23,
+        "camera_id": 7,
+        "azimuth": 180,
+        "patrol_id": null,
+        "active": true
+      },
+      {
+        "id": 215,
+        "camera_id": 7,
+        "azimuth": 1,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "camera-008",
+    "organization_id": 3,
+    "lat": 45.5903,
+    "lon": 1.4059,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 9,
+    "name": "camera-009",
+    "organization_id": 4,
+    "lat": 44.4615,
+    "lon": 4.3746,
+    "elevation": 291,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 101,
+        "camera_id": 9,
+        "azimuth": 265,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "camera-010",
+    "organization_id": 4,
+    "lat": 44.4615,
+    "lon": 4.3746,
+    "elevation": 748,
+    "angle_of_view": 180,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 265,
+        "camera_id": 10,
+        "azimuth": 262,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "camera-011",
+    "organization_id": 4,
+    "lat": 44.4615,
+    "lon": 4.3746,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 433,
+        "camera_id": 11,
+        "azimuth": 50,
+        "patrol_id": 4,
+        "active": true
+      },
+      {
+        "id": 156,
+        "camera_id": 11,
+        "azimuth": 290,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 435,
+        "camera_id": 11,
+        "azimuth": 130,
+        "patrol_id": 6,
+        "active": true
+      },
+      {
+        "id": 434,
+        "camera_id": 11,
+        "azimuth": 90,
+        "patrol_id": 5,
+        "active": true
+      },
+      {
+        "id": 250,
+        "camera_id": 11,
+        "azimuth": 10,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 277,
+        "camera_id": 11,
+        "azimuth": 250,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 281,
+        "camera_id": 11,
+        "azimuth": 330,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "camera-012",
+    "organization_id": 5,
+    "lat": 45.1191,
+    "lon": 4.7248,
+    "elevation": 600,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 246,
+        "camera_id": 12,
+        "azimuth": 39,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "camera-013",
+    "organization_id": 5,
+    "lat": 45.1191,
+    "lon": 4.7248,
+    "elevation": 435,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 251,
+        "camera_id": 13,
+        "azimuth": 127,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "camera-014",
+    "organization_id": 5,
+    "lat": 45.1191,
+    "lon": 4.7248,
+    "elevation": 464,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 323,
+        "camera_id": 14,
+        "azimuth": 226,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "camera-015",
+    "organization_id": 5,
+    "lat": 45.1191,
+    "lon": 4.7248,
+    "elevation": 274,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 271,
+        "camera_id": 15,
+        "azimuth": 311,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "camera-016",
+    "organization_id": 5,
+    "lat": 44.7003,
+    "lon": 4.5331,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 236,
+        "camera_id": 16,
+        "azimuth": 282,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "camera-017",
+    "organization_id": 5,
+    "lat": 44.7003,
+    "lon": 4.5331,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 343,
+        "camera_id": 17,
+        "azimuth": 339,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "camera-018",
+    "organization_id": 5,
+    "lat": 44.7003,
+    "lon": 4.5331,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 197,
+        "camera_id": 18,
+        "azimuth": 29,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "camera-019",
+    "organization_id": 5,
+    "lat": 44.7003,
+    "lon": 4.5331,
+    "elevation": 123,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 43,
+        "camera_id": 19,
+        "azimuth": 185,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "camera-020",
+    "organization_id": 5,
+    "lat": 44.6849,
+    "lon": 3.9275,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 21,
+    "name": "camera-021",
+    "organization_id": 5,
+    "lat": 44.6849,
+    "lon": 3.9275,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 22,
+    "name": "camera-022",
+    "organization_id": 5,
+    "lat": 44.6825,
+    "lon": 4.0297,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 80,
+        "camera_id": 22,
+        "azimuth": 270,
+        "patrol_id": 23,
+        "active": true
+      },
+      {
+        "id": 74,
+        "camera_id": 22,
+        "azimuth": 6,
+        "patrol_id": 25,
+        "active": true
+      },
+      {
+        "id": 115,
+        "camera_id": 22,
+        "azimuth": 54,
+        "patrol_id": 26,
+        "active": true
+      },
+      {
+        "id": 229,
+        "camera_id": 22,
+        "azimuth": 125,
+        "patrol_id": 20,
+        "active": true
+      },
+      {
+        "id": 150,
+        "camera_id": 22,
+        "azimuth": 173,
+        "patrol_id": 21,
+        "active": true
+      },
+      {
+        "id": 291,
+        "camera_id": 22,
+        "azimuth": 318,
+        "patrol_id": 24,
+        "active": true
+      },
+      {
+        "id": 324,
+        "camera_id": 22,
+        "azimuth": 222,
+        "patrol_id": 22,
+        "active": true
+      },
+      {
+        "id": 77,
+        "camera_id": 22,
+        "azimuth": 102,
+        "patrol_id": 27,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "camera-024",
+    "organization_id": 6,
+    "lat": 43.617,
+    "lon": 7.0036,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 267,
+        "camera_id": 24,
+        "azimuth": 80,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "camera-025",
+    "organization_id": 6,
+    "lat": 43.617,
+    "lon": 7.0036,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 42,
+        "camera_id": 25,
+        "azimuth": 160,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "camera-026",
+    "organization_id": 6,
+    "lat": 43.617,
+    "lon": 7.0036,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 52,
+        "camera_id": 26,
+        "azimuth": 212,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "camera-027",
+    "organization_id": 6,
+    "lat": 43.617,
+    "lon": 7.0036,
+    "elevation": 948,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 71,
+        "camera_id": 27,
+        "azimuth": 275,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "camera-028",
+    "organization_id": 6,
+    "lat": 44.0951,
+    "lon": 7.5062,
+    "elevation": 1003,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 256,
+        "camera_id": 28,
+        "azimuth": 67,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "camera-029",
+    "organization_id": 6,
+    "lat": 44.0951,
+    "lon": 7.5062,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 181,
+        "camera_id": 29,
+        "azimuth": 349,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "camera-030",
+    "organization_id": 6,
+    "lat": 44.0951,
+    "lon": 7.5062,
+    "elevation": 1021,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 315,
+        "camera_id": 30,
+        "azimuth": 223,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "camera-031",
+    "organization_id": 6,
+    "lat": 44.0951,
+    "lon": 7.5062,
+    "elevation": 396,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 306,
+        "camera_id": 31,
+        "azimuth": 138,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "camera-032",
+    "organization_id": 6,
+    "lat": 44.0119,
+    "lon": 7.5511,
+    "elevation": 240,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 33,
+    "name": "camera-033",
+    "organization_id": 6,
+    "lat": 44.0119,
+    "lon": 7.5511,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 34,
+    "name": "camera-034",
+    "organization_id": 6,
+    "lat": 44.0119,
+    "lon": 7.5511,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 35,
+    "name": "camera-035",
+    "organization_id": 6,
+    "lat": 44.0119,
+    "lon": 7.5511,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 36,
+    "name": "camera-036",
+    "organization_id": 6,
+    "lat": 44.1229,
+    "lon": 7.5076,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 37,
+    "name": "camera-037",
+    "organization_id": 6,
+    "lat": 44.1229,
+    "lon": 7.5076,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 38,
+    "name": "camera-038",
+    "organization_id": 6,
+    "lat": 44.1229,
+    "lon": 7.5076,
+    "elevation": 1325,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 39,
+    "name": "camera-039",
+    "organization_id": 6,
+    "lat": 44.1229,
+    "lon": 7.5076,
+    "elevation": 463,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 40,
+    "name": "camera-040",
+    "organization_id": 7,
+    "lat": 48.4325,
+    "lon": 2.6346,
+    "elevation": 1259,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 2,
+        "camera_id": 40,
+        "azimuth": 15,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 1,
+        "camera_id": 40,
+        "azimuth": 285,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 108,
+        "camera_id": 40,
+        "azimuth": 60,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 337,
+        "camera_id": 40,
+        "azimuth": 327,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "camera-041",
+    "organization_id": 7,
+    "lat": 48.4325,
+    "lon": 2.6346,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 49,
+        "camera_id": 41,
+        "azimuth": 146,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 3,
+        "camera_id": 41,
+        "azimuth": 100,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 79,
+        "camera_id": 41,
+        "azimuth": 235,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 312,
+        "camera_id": 41,
+        "azimuth": 190,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "camera-042",
+    "organization_id": 8,
+    "lat": 43.7491,
+    "lon": 2.9742,
+    "elevation": 1018,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 290,
+        "camera_id": 42,
+        "azimuth": 264,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 185,
+        "camera_id": 42,
+        "azimuth": 213,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 102,
+        "camera_id": 42,
+        "azimuth": 315,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "camera-043",
+    "organization_id": 8,
+    "lat": 43.7491,
+    "lon": 2.9742,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 284,
+        "camera_id": 43,
+        "azimuth": 100,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 205,
+        "camera_id": 43,
+        "azimuth": 48,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 151,
+        "camera_id": 43,
+        "azimuth": 357,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "camera-044",
+    "organization_id": 9,
+    "lat": 44.7888,
+    "lon": -1.0861,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 191,
+        "camera_id": 44,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "camera-045",
+    "organization_id": 9,
+    "lat": 44.7888,
+    "lon": -1.0861,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 114,
+        "camera_id": 45,
+        "azimuth": 90,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "camera-046",
+    "organization_id": 9,
+    "lat": 44.7888,
+    "lon": -1.0861,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 6,
+        "camera_id": 46,
+        "azimuth": 180,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "camera-047",
+    "organization_id": 9,
+    "lat": 44.7888,
+    "lon": -1.0861,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 164,
+        "camera_id": 47,
+        "azimuth": 270,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "camera-048",
+    "organization_id": 9,
+    "lat": 45.071,
+    "lon": -0.8412,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 55,
+        "camera_id": 48,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "camera-049",
+    "organization_id": 9,
+    "lat": 45.071,
+    "lon": -0.8412,
+    "elevation": 1047,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 235,
+        "camera_id": 49,
+        "azimuth": 90,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "camera-050",
+    "organization_id": 9,
+    "lat": 45.071,
+    "lon": -0.8412,
+    "elevation": 783,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 200,
+        "camera_id": 50,
+        "azimuth": 180,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "camera-051",
+    "organization_id": 9,
+    "lat": 45.071,
+    "lon": -0.8412,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 288,
+        "camera_id": 51,
+        "azimuth": 270,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "camera-053",
+    "organization_id": 2,
+    "lat": 48.8247,
+    "lon": 2.4589,
+    "elevation": 184,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 54,
+    "name": "camera-054",
+    "organization_id": 2,
+    "lat": 48.8247,
+    "lon": 2.4589,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 55,
+    "name": "camera-055",
+    "organization_id": 2,
+    "lat": 48.8247,
+    "lon": 2.4589,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 56,
+    "name": "camera-056",
+    "organization_id": 2,
+    "lat": 48.874,
+    "lon": 2.3981,
+    "elevation": 974,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": []
+  },
+  {
+    "id": 59,
+    "name": "camera-059",
+    "organization_id": 8,
+    "lat": 44.1462,
+    "lon": 2.8633,
+    "elevation": 284,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 70,
+        "camera_id": 59,
+        "azimuth": 188,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 187,
+        "camera_id": 59,
+        "azimuth": 34,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 321,
+        "camera_id": 59,
+        "azimuth": 85,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 230,
+        "camera_id": 59,
+        "azimuth": 136,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "camera-060",
+    "organization_id": 8,
+    "lat": 44.1462,
+    "lon": 2.8633,
+    "elevation": 850,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 39,
+        "camera_id": 60,
+        "azimuth": 216,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 47,
+        "camera_id": 60,
+        "azimuth": 267,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 307,
+        "camera_id": 60,
+        "azimuth": 319,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 286,
+        "camera_id": 60,
+        "azimuth": 10,
+        "patrol_id": 3,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "camera-063",
+    "organization_id": 7,
+    "lat": 48.6501,
+    "lon": 3.3004,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 259,
+        "camera_id": 63,
+        "azimuth": 52,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 147,
+        "camera_id": 63,
+        "azimuth": 194,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 61,
+        "camera_id": 63,
+        "azimuth": 147,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 73,
+        "camera_id": 63,
+        "azimuth": 100,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "camera-065",
+    "organization_id": 7,
+    "lat": 48.6501,
+    "lon": 3.3004,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 13,
+        "camera_id": 65,
+        "azimuth": 291,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 193,
+        "camera_id": 65,
+        "azimuth": 246,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 107,
+        "camera_id": 65,
+        "azimuth": 25,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 297,
+        "camera_id": 65,
+        "azimuth": 340,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "camera-066",
+    "organization_id": 7,
+    "lat": 48.1799,
+    "lon": 2.7572,
+    "elevation": 841,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 207,
+        "camera_id": 66,
+        "azimuth": 235,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 91,
+        "camera_id": 66,
+        "azimuth": 280,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 105,
+        "camera_id": 66,
+        "azimuth": 189,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 198,
+        "camera_id": 66,
+        "azimuth": 144,
+        "patrol_id": 0,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "camera-067",
+    "organization_id": 7,
+    "lat": 48.1799,
+    "lon": 2.7572,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 292,
+        "camera_id": 67,
+        "azimuth": 44,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 59,
+        "camera_id": 67,
+        "azimuth": 89,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 149,
+        "camera_id": 67,
+        "azimuth": 359,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 153,
+        "camera_id": 67,
+        "azimuth": 316,
+        "patrol_id": 0,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "camera-068",
+    "organization_id": 7,
+    "lat": 48.3965,
+    "lon": 1.996,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 46,
+        "camera_id": 68,
+        "azimuth": 109,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 171,
+        "camera_id": 68,
+        "azimuth": 157,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "camera-069",
+    "organization_id": 7,
+    "lat": 48.3965,
+    "lon": 1.996,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 168,
+        "camera_id": 69,
+        "azimuth": 80,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "camera-070",
+    "organization_id": 11,
+    "lat": 48.5315,
+    "lon": 7.0794,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 85,
+        "camera_id": 70,
+        "azimuth": 79,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 319,
+        "camera_id": 70,
+        "azimuth": 300,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 35,
+        "camera_id": 70,
+        "azimuth": 348,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 15,
+        "camera_id": 70,
+        "azimuth": 37,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "camera-071",
+    "organization_id": 11,
+    "lat": 48.5315,
+    "lon": 7.0794,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 216,
+        "camera_id": 71,
+        "azimuth": 267,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 204,
+        "camera_id": 71,
+        "azimuth": 125,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 27,
+        "camera_id": 71,
+        "azimuth": 172,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 100,
+        "camera_id": 71,
+        "azimuth": 220,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "camera-072",
+    "organization_id": 11,
+    "lat": 48.8687,
+    "lon": 7.5593,
+    "elevation": 563,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 340,
+        "camera_id": 72,
+        "azimuth": 324,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 166,
+        "camera_id": 72,
+        "azimuth": 277,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 124,
+        "camera_id": 72,
+        "azimuth": 59,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 53,
+        "camera_id": 72,
+        "azimuth": 12,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "camera-073",
+    "organization_id": 11,
+    "lat": 48.8687,
+    "lon": 7.5593,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 75,
+        "camera_id": 73,
+        "azimuth": 113,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 195,
+        "camera_id": 73,
+        "azimuth": 160,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 335,
+        "camera_id": 73,
+        "azimuth": 254,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 258,
+        "camera_id": 73,
+        "azimuth": 207,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "camera-074",
+    "organization_id": 11,
+    "lat": 48.444,
+    "lon": 7.4698,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 127,
+        "camera_id": 74,
+        "azimuth": 235,
+        "patrol_id": 4,
+        "active": true
+      },
+      {
+        "id": 326,
+        "camera_id": 74,
+        "azimuth": 191,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 177,
+        "camera_id": 74,
+        "azimuth": 97,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 317,
+        "camera_id": 74,
+        "azimuth": 144,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 224,
+        "camera_id": 74,
+        "azimuth": 282,
+        "patrol_id": 5,
+        "active": true
+      },
+      {
+        "id": 146,
+        "camera_id": 74,
+        "azimuth": 50,
+        "patrol_id": 0,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "camera-081",
+    "organization_id": 14,
+    "lat": 46.8486,
+    "lon": 1.8869,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 157,
+        "camera_id": 81,
+        "azimuth": 63,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 190,
+        "camera_id": 81,
+        "azimuth": 105,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 87,
+        "camera_id": 81,
+        "azimuth": 20,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 58,
+        "camera_id": 81,
+        "azimuth": 334,
+        "patrol_id": 0,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "camera-082",
+    "organization_id": 14,
+    "lat": 46.8486,
+    "lon": 1.8869,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 189,
+        "camera_id": 82,
+        "azimuth": 246,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 273,
+        "camera_id": 82,
+        "azimuth": 156,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 97,
+        "camera_id": 82,
+        "azimuth": 293,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 16,
+        "camera_id": 82,
+        "azimuth": 205,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "camera-083",
+    "organization_id": 12,
+    "lat": 44.066,
+    "lon": -0.8959,
+    "elevation": 310,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 18,
+        "camera_id": 83,
+        "azimuth": 243,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 247,
+        "camera_id": 83,
+        "azimuth": 146,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 29,
+        "camera_id": 83,
+        "azimuth": 290,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 25,
+        "camera_id": 83,
+        "azimuth": 195,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "camera-084",
+    "organization_id": 12,
+    "lat": 44.066,
+    "lon": -0.8959,
+    "elevation": 1184,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 327,
+        "camera_id": 84,
+        "azimuth": 110,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 123,
+        "camera_id": 84,
+        "azimuth": 329,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 260,
+        "camera_id": 84,
+        "azimuth": 15,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 225,
+        "camera_id": 84,
+        "azimuth": 63,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "camera-085",
+    "organization_id": 16,
+    "lat": 41.3428,
+    "lon": 1.5136,
+    "elevation": null,
+    "angle_of_view": 60,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 208,
+        "camera_id": 85,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "camera-086",
+    "organization_id": 16,
+    "lat": 41.5367,
+    "lon": 1.8377,
+    "elevation": null,
+    "angle_of_view": 60,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 209,
+        "camera_id": 86,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "camera-087",
+    "organization_id": 16,
+    "lat": 41.3708,
+    "lon": 1.7156,
+    "elevation": null,
+    "angle_of_view": 60,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 336,
+        "camera_id": 87,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "camera-088",
+    "organization_id": 16,
+    "lat": 41.4483,
+    "lon": 1.8308,
+    "elevation": null,
+    "angle_of_view": 60,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 294,
+        "camera_id": 88,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "name": "camera-089",
+    "organization_id": 16,
+    "lat": 41.494,
+    "lon": 1.4299,
+    "elevation": 339,
+    "angle_of_view": 60,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 240,
+        "camera_id": 89,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "name": "camera-090",
+    "organization_id": 16,
+    "lat": 41.4601,
+    "lon": 1.515,
+    "elevation": null,
+    "angle_of_view": 60,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 268,
+        "camera_id": 90,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "camera-091",
+    "organization_id": 5,
+    "lat": 44.7295,
+    "lon": 4.6729,
+    "elevation": null,
+    "angle_of_view": 62,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 125,
+        "camera_id": 91,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "camera-092",
+    "organization_id": 5,
+    "lat": 44.5363,
+    "lon": 4.1335,
+    "elevation": 628,
+    "angle_of_view": 62,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 192,
+        "camera_id": 92,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "camera-094",
+    "organization_id": 5,
+    "lat": 44.5595,
+    "lon": 4.1852,
+    "elevation": 1303,
+    "angle_of_view": 62,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 172,
+        "camera_id": 94,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "camera-095",
+    "organization_id": 5,
+    "lat": 44.554,
+    "lon": 4.4368,
+    "elevation": 559,
+    "angle_of_view": 62,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 217,
+        "camera_id": 95,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "camera-096",
+    "organization_id": 5,
+    "lat": 44.8559,
+    "lon": 4.5599,
+    "elevation": 1035,
+    "angle_of_view": 62,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 310,
+        "camera_id": 96,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "camera-097",
+    "organization_id": 5,
+    "lat": 44.9354,
+    "lon": 4.5255,
+    "elevation": null,
+    "angle_of_view": 62,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 219,
+        "camera_id": 97,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "camera-098",
+    "organization_id": 5,
+    "lat": 44.4954,
+    "lon": 4.2412,
+    "elevation": 1322,
+    "angle_of_view": 62,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 165,
+        "camera_id": 98,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "camera-099",
+    "organization_id": 5,
+    "lat": 45.0185,
+    "lon": 4.4323,
+    "elevation": 309,
+    "angle_of_view": 62,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 170,
+        "camera_id": 99,
+        "azimuth": 0,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "camera-100",
+    "organization_id": 12,
+    "lat": 44.1352,
+    "lon": -0.1467,
+    "elevation": 105,
+    "angle_of_view": 98,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 158,
+        "camera_id": 100,
+        "azimuth": 308,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 233,
+        "camera_id": 100,
+        "azimuth": 358,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 203,
+        "camera_id": 100,
+        "azimuth": 98,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 98,
+        "camera_id": 100,
+        "azimuth": 48,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "camera-101",
+    "organization_id": 12,
+    "lat": 44.1352,
+    "lon": -0.1467,
+    "elevation": 551,
+    "angle_of_view": 98,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 239,
+        "camera_id": 101,
+        "azimuth": 127,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 88,
+        "camera_id": 101,
+        "azimuth": 277,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 254,
+        "camera_id": 101,
+        "azimuth": 177,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 30,
+        "camera_id": 101,
+        "azimuth": 227,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "camera-104",
+    "organization_id": 4,
+    "lat": 45.6183,
+    "lon": 6.089,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 345,
+        "camera_id": 104,
+        "azimuth": 0,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 347,
+        "camera_id": 104,
+        "azimuth": 150,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 346,
+        "camera_id": 104,
+        "azimuth": 50,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "camera-106",
+    "organization_id": 17,
+    "lat": 43.617,
+    "lon": 7.0036,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 152,
+        "camera_id": 106,
+        "azimuth": 212,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "camera-108",
+    "organization_id": 17,
+    "lat": 44.0951,
+    "lon": 7.5062,
+    "elevation": 419,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 173,
+        "camera_id": 108,
+        "azimuth": 67,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "camera-110",
+    "organization_id": 17,
+    "lat": 44.0119,
+    "lon": 7.5511,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 139,
+        "camera_id": 110,
+        "azimuth": 125,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "camera-112",
+    "organization_id": 17,
+    "lat": 44.1229,
+    "lon": 7.5076,
+    "elevation": null,
+    "angle_of_view": 87,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 116,
+        "camera_id": 112,
+        "azimuth": 2,
+        "patrol_id": null,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "name": "camera-114",
+    "organization_id": 18,
+    "lat": 43.089,
+    "lon": 2.6971,
+    "elevation": 1426,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 357,
+        "camera_id": 114,
+        "azimuth": 0,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 358,
+        "camera_id": 114,
+        "azimuth": 30,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 359,
+        "camera_id": 114,
+        "azimuth": 60,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "name": "camera-115",
+    "organization_id": 18,
+    "lat": 43.089,
+    "lon": 2.6971,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 360,
+        "camera_id": 115,
+        "azimuth": 90,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 361,
+        "camera_id": 115,
+        "azimuth": 120,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 362,
+        "camera_id": 115,
+        "azimuth": 150,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "name": "camera-116",
+    "organization_id": 18,
+    "lat": 43.089,
+    "lon": 2.6971,
+    "elevation": 1094,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 363,
+        "camera_id": 116,
+        "azimuth": 180,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 364,
+        "camera_id": 116,
+        "azimuth": 210,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 365,
+        "camera_id": 116,
+        "azimuth": 240,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "name": "camera-117",
+    "organization_id": 18,
+    "lat": 43.089,
+    "lon": 2.6971,
+    "elevation": 785,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 366,
+        "camera_id": 117,
+        "azimuth": 270,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 367,
+        "camera_id": 117,
+        "azimuth": 300,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 368,
+        "camera_id": 117,
+        "azimuth": 330,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "name": "camera-120",
+    "organization_id": 19,
+    "lat": 49.0632,
+    "lon": 8.1628,
+    "elevation": 523,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 154,
+        "camera_id": 120,
+        "azimuth": 100,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 274,
+        "camera_id": 120,
+        "azimuth": 150,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 10,
+        "camera_id": 120,
+        "azimuth": 50,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 339,
+        "camera_id": 120,
+        "azimuth": 0,
+        "patrol_id": 0,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "camera-121",
+    "organization_id": 19,
+    "lat": 49.0632,
+    "lon": 8.1628,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 228,
+        "camera_id": 121,
+        "azimuth": 300,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 19,
+        "camera_id": 121,
+        "azimuth": 250,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 202,
+        "camera_id": 121,
+        "azimuth": 200,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 9,
+        "camera_id": 121,
+        "azimuth": 350,
+        "patrol_id": 3,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "camera-122",
+    "organization_id": 11,
+    "lat": 48.6815,
+    "lon": 7.3874,
+    "elevation": 660,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 401,
+        "camera_id": 122,
+        "azimuth": 121,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 402,
+        "camera_id": 122,
+        "azimuth": 163,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 403,
+        "camera_id": 122,
+        "azimuth": 205,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 404,
+        "camera_id": 122,
+        "azimuth": 248,
+        "patrol_id": 3,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "name": "camera-123",
+    "organization_id": 11,
+    "lat": 48.6815,
+    "lon": 7.3874,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 408,
+        "camera_id": 123,
+        "azimuth": 69,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 405,
+        "camera_id": 123,
+        "azimuth": 300,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 407,
+        "camera_id": 123,
+        "azimuth": 26,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 406,
+        "camera_id": 123,
+        "azimuth": 343,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "name": "camera-124",
+    "organization_id": 11,
+    "lat": 48.5658,
+    "lon": 7.4966,
+    "elevation": 942,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 409,
+        "camera_id": 124,
+        "azimuth": 210,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 412,
+        "camera_id": 124,
+        "azimuth": 338,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 410,
+        "camera_id": 124,
+        "azimuth": 253,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 411,
+        "camera_id": 124,
+        "azimuth": 296,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "name": "camera-125",
+    "organization_id": 11,
+    "lat": 48.5658,
+    "lon": 7.4966,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 413,
+        "camera_id": 125,
+        "azimuth": 26,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 416,
+        "camera_id": 125,
+        "azimuth": 161,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 414,
+        "camera_id": 125,
+        "azimuth": 69,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 415,
+        "camera_id": 125,
+        "azimuth": 117,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "name": "camera-126",
+    "organization_id": 11,
+    "lat": 48.984,
+    "lon": 7.248,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 387,
+        "camera_id": 126,
+        "azimuth": 255,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 388,
+        "camera_id": 126,
+        "azimuth": 300,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 385,
+        "camera_id": 126,
+        "azimuth": 168,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 386,
+        "camera_id": 126,
+        "azimuth": 212,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "name": "camera-127",
+    "organization_id": 11,
+    "lat": 48.984,
+    "lon": 7.248,
+    "elevation": 673,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 391,
+        "camera_id": 127,
+        "azimuth": 69,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 392,
+        "camera_id": 127,
+        "azimuth": 113,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 389,
+        "camera_id": 127,
+        "azimuth": 340,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 390,
+        "camera_id": 127,
+        "azimuth": 25,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "name": "camera-128",
+    "organization_id": 11,
+    "lat": 48.9525,
+    "lon": 7.2941,
+    "elevation": 724,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 395,
+        "camera_id": 128,
+        "azimuth": 146,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 396,
+        "camera_id": 128,
+        "azimuth": 7,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 393,
+        "camera_id": 128,
+        "azimuth": 59,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 394,
+        "camera_id": 128,
+        "azimuth": 102,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "name": "camera-129",
+    "organization_id": 11,
+    "lat": 48.9525,
+    "lon": 7.2941,
+    "elevation": 1030,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 400,
+        "camera_id": 129,
+        "azimuth": 319,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 397,
+        "camera_id": 129,
+        "azimuth": 187,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 399,
+        "camera_id": 129,
+        "azimuth": 275,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 398,
+        "camera_id": 129,
+        "azimuth": 231,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "name": "camera-132",
+    "organization_id": 20,
+    "lat": 43.6113,
+    "lon": 4.5771,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 425,
+        "camera_id": 132,
+        "azimuth": 0,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 426,
+        "camera_id": 132,
+        "azimuth": 45,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 427,
+        "camera_id": 132,
+        "azimuth": 90,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 428,
+        "camera_id": 132,
+        "azimuth": 135,
+        "patrol_id": 3,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "name": "camera-133",
+    "organization_id": 20,
+    "lat": 43.6113,
+    "lon": 4.5771,
+    "elevation": 1005,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 429,
+        "camera_id": 133,
+        "azimuth": 180,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 431,
+        "camera_id": 133,
+        "azimuth": 270,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 430,
+        "camera_id": 133,
+        "azimuth": 225,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 432,
+        "camera_id": 133,
+        "azimuth": 315,
+        "patrol_id": 3,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "name": "camera-134",
+    "organization_id": 21,
+    "lat": 48.3943,
+    "lon": 2.0692,
+    "elevation": 797,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 436,
+        "camera_id": 134,
+        "azimuth": 131,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 439,
+        "camera_id": 134,
+        "azimuth": 263,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 437,
+        "camera_id": 134,
+        "azimuth": 175,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 438,
+        "camera_id": 134,
+        "azimuth": 219,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "name": "camera-135",
+    "organization_id": 21,
+    "lat": 48.3943,
+    "lon": 2.0692,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 442,
+        "camera_id": 135,
+        "azimuth": 32,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 440,
+        "camera_id": 135,
+        "azimuth": 305,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 443,
+        "camera_id": 135,
+        "azimuth": 76,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 441,
+        "camera_id": 135,
+        "azimuth": 348,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "name": "camera-136",
+    "organization_id": 21,
+    "lat": 48.3902,
+    "lon": 2.1986,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 445,
+        "camera_id": 136,
+        "azimuth": 190,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 444,
+        "camera_id": 136,
+        "azimuth": 146,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 446,
+        "camera_id": 136,
+        "azimuth": 233,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "name": "camera-137",
+    "organization_id": 21,
+    "lat": 48.3902,
+    "lon": 2.1986,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 451,
+        "camera_id": 137,
+        "azimuth": 93,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 449,
+        "camera_id": 137,
+        "azimuth": 7,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 450,
+        "camera_id": 137,
+        "azimuth": 50,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 448,
+        "camera_id": 137,
+        "azimuth": 323,
+        "patrol_id": 0,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "name": "camera-138",
+    "organization_id": 4,
+    "lat": 45.6183,
+    "lon": 6.089,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 455,
+        "camera_id": 138,
+        "azimuth": 135,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 452,
+        "camera_id": 138,
+        "azimuth": 0,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 453,
+        "camera_id": 138,
+        "azimuth": 45,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 454,
+        "camera_id": 138,
+        "azimuth": 90,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "name": "camera-141",
+    "organization_id": 22,
+    "lat": 48.8711,
+    "lon": 1.6329,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 467,
+        "camera_id": 141,
+        "azimuth": 135,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 464,
+        "camera_id": 141,
+        "azimuth": 0,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 465,
+        "camera_id": 141,
+        "azimuth": 45,
+        "patrol_id": 1,
+        "active": true
+      },
+      {
+        "id": 466,
+        "camera_id": 141,
+        "azimuth": 90,
+        "patrol_id": 2,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "name": "camera-142",
+    "organization_id": 22,
+    "lat": 48.8711,
+    "lon": 1.6329,
+    "elevation": null,
+    "angle_of_view": 54.2,
+    "is_trustable": true,
+    "last_active_at": null,
+    "last_image": null,
+    "created_at": "2025-01-01T00:00:00",
+    "poses": [
+      {
+        "id": 470,
+        "camera_id": 142,
+        "azimuth": 270,
+        "patrol_id": 2,
+        "active": true
+      },
+      {
+        "id": 468,
+        "camera_id": 142,
+        "azimuth": 180,
+        "patrol_id": 0,
+        "active": true
+      },
+      {
+        "id": 471,
+        "camera_id": 142,
+        "azimuth": 315,
+        "patrol_id": 3,
+        "active": true
+      },
+      {
+        "id": 469,
+        "camera_id": 142,
+        "azimuth": 225,
+        "patrol_id": 1,
+        "active": true
+      }
+    ]
+  }
+]

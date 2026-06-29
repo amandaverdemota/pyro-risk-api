@@ -12,7 +12,7 @@ from pyro_risk_api.api import cameras, health, risk, scores
 from pyro_risk_api.core.config import settings
 from pyro_risk_api.core.db import SessionLocal, init_db
 from pyro_risk_api.core.fwi import fwi_class, query_fwi
-from pyro_risk_api.core.pyro_client import build_client
+from pyro_risk_api.core.pyro_client import load_cameras
 from pyro_risk_api.models.fwi_score import FWIScore
 
 logger = logging.getLogger(__name__)
@@ -145,9 +145,9 @@ def recompute_range(cams: list[dict], start: date_, end: date_) -> None:
 def refresh_cameras(app: FastAPI) -> None:
     try:
         now = datetime.now(timezone.utc)
-        client = build_client()
-        raw = client.fetch_cameras().json()
-        logger.info("fetched %d cameras from %s", len(raw), settings.pyro_api_host)
+        raw = load_cameras()
+        source = settings.cameras_file or settings.pyro_api_host
+        logger.info("fetched %d cameras from %s", len(raw), source)
         enriched = _enrich_with_fwi(raw, now)
         app.state.cameras = enriched
         logger.info("FWI computed for %d cameras", len(enriched))

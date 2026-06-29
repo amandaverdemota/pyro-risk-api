@@ -48,8 +48,9 @@ not committed). See `.env.example`:
 | `API_USERNAME`                 | Basic-auth user for protected routes          | _required_                           |
 | `API_PASSWORD`                 | Basic-auth password for protected routes      | _required_                           |
 | `PYRO_API_HOST`                | Upstream pyro-api host                        | `https://alertapi.pyronear.org/`     |
-| `PYRO_API_USERNAME`            | Upstream pyro-api username                    | _required_                           |
-| `PYRO_API_PASSWORD`            | Upstream pyro-api password                    | _required_                           |
+| `PYRO_API_USERNAME`            | Upstream pyro-api username                    | _required unless `CAMERAS_FILE` set_ |
+| `PYRO_API_PASSWORD`            | Upstream pyro-api password                    | _required unless `CAMERAS_FILE` set_ |
+| `CAMERAS_FILE`                 | Load cameras from a local JSON file (no creds); a bundled `sample_cameras.json` with anonymized positions is provided | _unset (use live API)_ |
 | `CAMERAS_REFRESH_CRON_HOUR`    | Daily refresh hour (UTC by default)           | `2`                                  |
 | `CAMERAS_REFRESH_CRON_MINUTE`  | Daily refresh minute                          | `0`                                  |
 | `CAMERAS_REFRESH_TIMEZONE`     | IANA timezone for the schedule                | `UTC`                                |
@@ -60,13 +61,18 @@ public so container orchestrators can probe it.
 
 ## Run locally
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+Uses [uv](https://docs.astral.sh/uv/). Install it if needed:
 
-cp .env.example .env  # then fill in credentials
-uvicorn pyro_risk_api.main:app --reload
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+```bash
+uv venv
+uv pip install -r requirements.txt
+
+cp .env.example .env  # runs creds-free by default (bundled sample cameras)
+uv run uvicorn pyro_risk_api.main:app --reload
 ```
 
 Then:
@@ -113,7 +119,7 @@ A tiny client lives at [`client/`](./client) and is published as
 `pyroriskclient`. Install with:
 
 ```bash
-pip install "git+https://github.com/MateoLostanlen/pyro-risk-api.git#subdirectory=client"
+uv pip install "git+https://github.com/MateoLostanlen/pyro-risk-api.git#subdirectory=client"
 ```
 
 ```python
@@ -149,8 +155,9 @@ pyro_risk_api/
 ## How the refresh works
 
 1. On startup the lifespan calls `refresh_cameras(app)`:
-   - Logs in to `PYRO_API_HOST` via `POST /api/v1/login/creds`.
-   - Calls `pyroclient.Client.fetch_cameras()`.
+   - Loads the camera list: from the local `CAMERAS_FILE` JSON if set
+     (no credentials needed), otherwise logs in to `PYRO_API_HOST` via
+     `POST /api/v1/login/creds` and calls `pyroclient.Client.fetch_cameras()`.
    - For each camera, samples today's FWI from EFFIS and stores
      `(id, name, organization_id, lat, lon, fwi, fwi_class, last_refresh_at)`
      in `app.state.cameras`.
