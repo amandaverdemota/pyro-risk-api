@@ -66,7 +66,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-cp .env.example .env  # then fill in credentials
+cp .env.example .env  # runs creds-free by default (bundled sample cameras)
 uvicorn pyro_risk_api.main:app --reload
 ```
 
