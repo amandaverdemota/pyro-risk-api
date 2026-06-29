@@ -50,7 +50,7 @@ not committed). See `.env.example`:
 | `PYRO_API_HOST`                | Upstream pyro-api host                        | `https://alertapi.pyronear.org/`     |
 | `PYRO_API_USERNAME`            | Upstream pyro-api username                    | _required unless `CAMERAS_FILE` set_ |
 | `PYRO_API_PASSWORD`            | Upstream pyro-api password                    | _required unless `CAMERAS_FILE` set_ |
-| `CAMERAS_FILE`                 | Load cameras from a local JSON file (no creds)| _unset (use live API)_               |
+| `CAMERAS_FILE`                 | Load cameras from a local JSON file (no creds); a bundled `sample_cameras.json` with anonymized positions is provided | _unset (use live API)_ |
 | `CAMERAS_REFRESH_CRON_HOUR`    | Daily refresh hour (UTC by default)           | `2`                                  |
 | `CAMERAS_REFRESH_CRON_MINUTE`  | Daily refresh minute                          | `0`                                  |
 | `CAMERAS_REFRESH_TIMEZONE`     | IANA timezone for the schedule                | `UTC`                                |
