@@ -14,7 +14,7 @@ from pyro_risk_api.api import cameras, health, risk, scores
 from pyro_risk_api.core.config import settings
 from pyro_risk_api.core.db import SessionLocal, init_db
 from pyro_risk_api.core.fwi import fwi_class, query_fwi
-from pyro_risk_api.core.pyro_client import build_client
+from pyro_risk_api.core.pyro_client import load_cameras
 from pyro_risk_api.models.fwi_score import FWIScore
 
 logger = logging.getLogger(__name__)
