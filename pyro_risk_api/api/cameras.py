@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 from pyro_risk_api.core.auth import require_basic_auth
 
-router = APIRouter(tags=["cameras"], dependencies=[Depends(require_basic_auth)])
+router = APIRouter(tags=["cameras"])
 
 
 class Camera(BaseModel):

@@ -9,7 +9,7 @@ from pyro_risk_api.core.auth import require_basic_auth
 from pyro_risk_api.core.db import SessionLocal
 from pyro_risk_api.models.fwi_score import FWIScore
 
-router = APIRouter(tags=["scores"], dependencies=[Depends(require_basic_auth)])
+router = APIRouter(tags=["scores"])
 
 
 class Score(BaseModel):

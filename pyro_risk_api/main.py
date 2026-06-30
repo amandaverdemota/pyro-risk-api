@@ -1,6 +1,8 @@
 import logging
 from contextlib import asynccontextmanager
 from datetime import date as date_, datetime, timedelta, timezone
+import json 
+import os
 
 import requests
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -142,18 +144,46 @@ def recompute_range(cams: list[dict], start: date_, end: date_) -> None:
     logger.info("recompute done: %d scores written, %d skipped, %s → %s", total, skipped, start, end)
 
 
-def refresh_cameras(app: FastAPI) -> None:
+def refresh_cameras(app):
     try:
-        now = datetime.now(timezone.utc)
-        client = build_client()
-        raw = client.fetch_cameras().json()
-        logger.info("fetched %d cameras from %s", len(raw), settings.pyro_api_host)
-        enriched = _enrich_with_fwi(raw, now)
-        app.state.cameras = enriched
-        logger.info("FWI computed for %d cameras", len(enriched))
-        _persist_scores(enriched, now)
-    except Exception:
-        logger.exception("failed to refresh cameras")
+        print("Chargement forcé des caméras depuis le fichier local...")
+        
+        # Cette ligne trouve automatiquement le dossier où est installé main.py
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        
+        # On remonte d'un niveau si main.py est dans pyro_risk_api/ et le json à la racine
+        # Si ton fichier json est dans le même dossier que main.py, utilise juste : 
+        # file_path = os.path.join(current_dir, "sample_cameras.json")
+        file_path = os.path.join(current_dir, "..", "sample_cameras.json")
+        
+        # Si jamais le fichier est directement à côté de main.py et pas au-dessus :
+        if not os.path.exists(file_path):
+            file_path = os.path.join(current_dir, "sample_cameras.json")
+
+        print(f"Tentative de lecture du fichier à l'adresse : {file_path}")
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            cameras = json.load(f)
+        
+        app.state.cameras = cameras 
+        print(f"Succès : {len(cameras)} caméras chargées en mémoire.")
+        
+    except Exception as e:
+        print("failed to refresh cameras")
+        print(f"Détail de l'erreur : {e}")
+
+#def refresh_cameras(app: FastAPI) -> None:
+#    try:
+#        now = datetime.now(timezone.utc)
+#        client = build_client()
+#        raw = client.fetch_cameras().json()
+#        logger.info("fetched %d cameras from %s", len(raw), settings.pyro_api_host)
+#        enriched = _enrich_with_fwi(raw, now)
+#        app.state.cameras = enriched
+#        logger.info("FWI computed for %d cameras", len(enriched))
+#        _persist_scores(enriched, now)
+#    except Exception:
+#        logger.exception("failed to refresh cameras")
 
 
 @asynccontextmanager
