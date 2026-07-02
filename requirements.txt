@@ -7,3 +7,10 @@ pyroclient @ git+https://github.com/pyronear/pyro-api.git@main#subdirectory=clie
 numpy
 pillow
 requests
+io
+datetime
+PIL
+geopandas
+pandas
+seaborn
+matplotlib.pyplot
